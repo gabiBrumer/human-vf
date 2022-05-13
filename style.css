@@ -33,8 +33,6 @@ header img {
     padding-top: 10px;
 }
 
-header nav {}
-
 header nav a {
     font-size: 16px;
     text-decoration: none;
@@ -69,6 +67,7 @@ header nav a {
     height: 40px;
     width: 40px;
     display: none;
+    border: none;
 }
 
 .drop-down div {
@@ -101,7 +100,6 @@ header nav a {
 .page-title h3 {
     width: 47%;
     margin-top: 3rem;
-    ;
     font-weight: lighter;
     font-size: 22px;
     line-height: 35px;
@@ -118,7 +116,7 @@ header nav a {
 }
 
 .page-title-button button {
-    margin:30px 15px;
+    margin: 30px 15px;
 }
 
 .footer-text {
@@ -141,8 +139,84 @@ header nav a {
     }
 
     body {
-        body {
-            background-size: auto;
-        }
+        background-size: auto
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    .page-title h1 {
+        width: 95%;
+        font-size: 4.5rem;
+
+    }
+
+    .page-title h3 {
+        width: 80%;
+        font-size: 1.7rem
+    }
+
+    .page-title-button #primary-button {
+        width: 10rem;
+    }
+
+    .page-title-button #secundary-button {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 780px) {
+
+    header {
+
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header #primary-button {
+        display: none;
+    }
+
+    .drop-down {
+        display: block;
+
+    }
+
+    .page-title h1 {
+        width: 90%;
+        font-size: 3.5rem;
+
+    }
+
+    .page-title h3 {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    .page-title-button #primary-button {
+        width: 10rem;
+    }
+
+    .page-title-button #secundary-button {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0 8px;
+    }
+
+    .page-title-button {
+        flex-direction: column;
     }
 }
